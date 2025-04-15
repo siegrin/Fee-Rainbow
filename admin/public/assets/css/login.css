@@ -1,0 +1,179 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #4723d9;
+  --first-color-light: #afa5d9;
+  --title-color: #000000;
+  --white-color: #f7f6fb;
+  --body-color: #eaeaea;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+.container {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  margin-inline: 1.5rem;
+  background-color: hsla(0, 0%, 100%, 0.01);
+  border: 2px solid #4723d9;
+  padding: 2.5rem 1rem;
+  color: var(--title-color);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(16px);
+}
+
+.title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.inputs,
+.input__box {
+  display: grid;
+}
+
+.inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.input__box {
+  grid-template-columns: 1fr max-content;
+  column-gap: 0.75rem;
+  align-items: center;
+  border: 2px solid var(--first-color);
+  padding-inline: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.input-field,
+.login__button {
+  border: none;
+  outline: none;
+}
+
+.input-field {
+  width: 100%;
+  background: none;
+  color: var(--title-color);
+  padding-block: 1rem;
+}
+
+.input-field::placeholder {
+  color: var(--first-color-light);
+}
+
+.input__box i {
+  font-size: 1.25rem;
+}
+
+.options,
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options {
+  margin-bottom: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.checkbox {
+  column-gap: 0.5rem;
+}
+
+.checkbox__input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--white-color);
+}
+
+.link {
+  color: var(--title-color);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--first-color);
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.register {
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.register a {
+  color: var(--first-color);
+  font-weight: 500;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .container {
+    justify-content: center;
+  }
+  .form {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+  .title {
+    margin-bottom: 2rem;
+  }
+}

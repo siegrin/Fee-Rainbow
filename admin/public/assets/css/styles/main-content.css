@@ -1,0 +1,44 @@
+
+/* main body section */
+.main--content {
+  position: relative;
+  padding: 1rem;
+}
+
+.header--wrapper img{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.header--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem
+}
+
+.header--title {
+  color: #000000;
+}
+
+.user--info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tabular--wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap:.5rem;
+  background: var(--white-color);
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+}

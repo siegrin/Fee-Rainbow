@@ -1,0 +1,29 @@
+.form__search{
+    display: block;
+}
+.search--box {
+    background: var(--body-color);
+    border-radius: 15px;
+    color: rgba(113,99,186,255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+  }
+  
+  .search--box input {
+    background: transparent;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  
+  .search--box i:hover {
+    transform: scale(1.2);
+  }
+  

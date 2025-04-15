@@ -1,0 +1,19 @@
+.pagination{
+    padding-top: 1rem;
+  }
+  
+  .pagination__content{
+    display: inline-block;
+  }
+  
+  .pagination__content a {
+    color: white;
+    padding: 4px 8px;
+    transition: background-color .3s;
+    border: 1px solid #4723D9;
+    background-color: #4723D9;
+  }
+  
+  .pagination__content a:hover {
+    background-color: #2e01df;
+  }

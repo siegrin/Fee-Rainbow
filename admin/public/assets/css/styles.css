@@ -1,0 +1,82 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+@import url(styles/variable.css);
+
+/*========== BASE ==========*/
+@import url(styles/base.css);
+
+/*========== HEADER ==========*/
+@import url(styles/header.css);
+
+/*========== NAV ==========*/
+@import url(styles/nav.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/main-content.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/card.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/table.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/breadcrumb.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/button.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/search.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/pagination.css);
+
+/*========== MAIN-CONTENT ==========*/
+@import url(styles/form.css);
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 1rem);
+  }
+
+  .header {
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+
+  .l-navbar {
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+
+  /*Show navbar desktop*/
+  .show {
+    width: calc(var(--nav-width) + 156px);
+  }
+
+  /*Add padding body desktop*/
+  .body-pd {
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+
+  .form__group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form__input {
+    width: 100%;
+  }
+  .image-preview {
+    width: 100%;
+    width: 150px;
+    height: 150px;
+  }
+}

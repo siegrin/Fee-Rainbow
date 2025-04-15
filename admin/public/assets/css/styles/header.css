@@ -1,0 +1,23 @@
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); /* for safari */
+    z-index: var(--z-fixed);
+    transition: .5s;
+  }
+  
+  .header__toggle{
+    color: var(--first-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }

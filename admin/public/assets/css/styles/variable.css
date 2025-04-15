@@ -1,0 +1,35 @@
+/*===== VARIABLES CSS =====*/
+:root{
+    --header-height: 3.5rem;
+    --nav-width: 68px;
+  
+    /*===== Colors =====*/
+    --hue: 252;
+    --first-color: hsl(var(--hue), 72%, 49%);
+    --first-color-light: hsl(var(--hue), 56%, 66%);
+    --title-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 0%);
+    --white-color: #fff;
+    --body-color: #ededed;
+    
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;    
+    
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    
+    /*===== z index =====*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }

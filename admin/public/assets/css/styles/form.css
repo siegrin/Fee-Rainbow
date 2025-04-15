@@ -1,0 +1,84 @@
+.form__container {
+  padding-top: 1rem;
+}
+
+.form,
+.form__group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.form {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--body-color);
+  color: var(--title-color);
+  -webkit-appearance: none;
+}
+
+.form__input[type="number"]::-webkit-outer-spin-button,
+.form__input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Untuk Firefox */
+.form__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form__input::placeholder {
+  color: #555555;
+}
+
+.form textarea {
+  height: 11rem;
+  resize: none;
+}
+
+.form__button {
+  background-color: var(--first-color-light);
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+.form__button:hover {
+  background-color: var(--first-color);
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.image-preview {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--first-color);
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.image-preview img {
+  display: block;
+}
+
+.form__button {
+  justify-self: center;
+  cursor: pointer;
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.login__input::placeholder {
+  color: var(--black-color);
+}

@@ -1,0 +1,12 @@
+# Aktifkan mod_rewrite
+RewriteEngine On
+
+# Pastikan bukan file atau direktori yang ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect /categories → index.php?page=categories
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [QSA,L]
+
+# Redirect /categories/add → index.php?page=categories&action=add
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?page=$1&action=$2 [QSA,L]

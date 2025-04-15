@@ -1,0 +1,55 @@
+
+/*=== Base ====*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+button,
+select,
+body{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body{
+  margin: var(--header-height) 0 0 0;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  padding: 0 1rem;
+  transition: .5s;
+}
+
+input,
+textarea,
+select,
+button{
+  outline: none;
+  border: none;
+}
+
+h1,h2,h3,h4{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img,
+svg{
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,67 @@
+.table--container {
+  width: 100%;
+  overflow-x: auto; /* Tambahkan scroll horizontal jika tabel terlalu lebar */
+  white-space: nowrap;
+}
+
+.table {
+  max-width: 100%;
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--first-color);
+  color: var(--white-color);
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+}
+
+tbody {
+  background: var(--body-color);
+}
+
+td {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tfoot{
+  background: #4723D9;
+  font-weight: bold;
+  color: #fff;
+}
+
+tfoot td {
+  padding: 15px;
+  color: #fff;
+}
+
+.table--container a {
+  cursor: pointer;
+}
+
+.table--container td div a{
+  margin-right: 1rem;
+}
+
+.btn-edit {
+  color: green;
+}
+
+.btn-view {
+  color: blue;
+}
+
+.btn-delete {
+  color: red;
+}

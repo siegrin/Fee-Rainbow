@@ -1,0 +1,56 @@
+/* tabular section */
+.table--container {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.table--container form {
+  position: relative;
+  background-color: #eaeaea;
+  padding: 2.5rem 1rem;
+  color: var(--black-color);
+  border-radius: .5rem;
+}
+
+.login__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.25rem;
+  }
+  
+  .login__inputs,
+  .login__box {
+    display: grid;
+  }
+  
+  .login__inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+  }
+  
+  .login__box {
+    grid-template-columns: 1fr max-content;
+    column-gap: .75rem;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 0%, .7);
+    padding-inline: 1.25rem;
+    border-radius: 4rem;
+  }
+  
+  .login__input,
+  .login__button {
+    border: none;
+    outline: none;
+  }
+  
+  .login__input {
+    width: 100%;
+    background-color: transparent;
+    color: var(--black-color);
+    padding-block: 1rem;
+  }
+  
+  .login__input::placeholder{
+    color: var(--black-color);
+  }
