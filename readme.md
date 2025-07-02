@@ -82,6 +82,15 @@
 
 ---
 
+## 🧰 Teknologi yang Digunakan
+
+- PHP Native (Procedural)
+- MySQL
+- HTML5 + CSS3
+- JavaScript
+
+---
+
 ## 📂 Struktur Folder
 
 ```bash
