@@ -122,7 +122,7 @@ Fee-Rainbow/
 Berikut tampilan antarmuka dari website **Fee Rainbow**:
 
 <p align="center">
-  <img src="preview/dashboard.jpg" alt="Tampilan Halaman User" width="800">
+  <img src="preview/dashboard.png" alt="Tampilan Halaman User" width="800">
 </p>
 
 <p align="center">
