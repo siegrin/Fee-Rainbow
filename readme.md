@@ -1,183 +1,179 @@
-# 📄 Katalog Toko Buket | Sistem Manajemen Produk Web
+# 🌈 Fee Rainbow — Website Toko Buket Online (PHP Procedural)
 
-Sebuah aplikasi katalog toko berbasis PHP procedural yang memungkinkan pengelolaan produk, kategori, subkategori, serta occasion (acara) dengan fitur CRUD lengkap. Proyek ini cocok untuk toko kecil hingga menengah yang ingin menampilkan produk mereka secara online, dengan sistem login admin dan panel backend sederhana namun efektif.
+> 📥 **Ingin mendapatkan file lengkap proyek ini?**  
+> 👉 **[Klik di sini untuk mengakses file](https://sfl.gl/ED7QRvFI)** atau  
+> ✉️ **[Hubungi saya langsung melalui GitHub](https://github.com/siegrin)**
+
+<p align="center">
+  <a href="https://github.com/siegrin/Fee-Rainbow">
+    <img src="https://komarev.com/ghpvc/?username=siegrin&label=Visitors&color=0e75b6&style=flat" alt="visitor badge"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow/commits/main">
+    <img src="https://img.shields.io/github/last-commit/siegrin/Fee-Rainbow?style=flat-square" alt="last commit"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow">
+    <img src="https://img.shields.io/github/repo-size/siegrin/Fee-Rainbow?style=flat-square" alt="repo size"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow/issues">
+    <img src="https://img.shields.io/github/issues/siegrin/Fee-Rainbow?style=flat-square" alt="open issues"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow/stargazers">
+    <img src="https://img.shields.io/github/stars/siegrin/Fee-Rainbow?style=social" alt="GitHub stars"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow/network/members">
+    <img src="https://img.shields.io/github/forks/siegrin/Fee-Rainbow?style=social" alt="GitHub forks"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/siegrin/Fee-Rainbow?style=flat-square" alt="license"/>
+  </a>
+  <a href="https://github.com/siegrin/Fee-Rainbow">
+    <img src="https://img.shields.io/github/languages/top/siegrin/Fee-Rainbow?style=flat-square" alt="top language"/>
+  </a>
+</p>
+
+**Fee Rainbow** adalah website katalog dan manajemen toko buket yang dikembangkan menggunakan PHP native/prosedural. Website ini dibuat karena sebelumnya **sepupu saya belum memiliki website** untuk usaha bouquet-nya. Saya membangun website ini sebagai bagian dari proses belajar, dengan bantuan teknologi AI, namun saya tetap memahami kode yang digunakan dan terus melakukan eksperimen sendiri.
 
 ---
 
-## 🌐 Live Demo
+## 🎯 Tujuan & Latar Belakang
 
-- 👉 **Katalog Produk (User):** [http://katalogbuketnue.infinityfreeapp.com](http://katalogbuketnue.infinityfreeapp.com)
-- 👉 **Admin Panel:** [http://katalogbuketnue.infinityfreeapp.com/admin/index.php?page=login](http://katalogbuketnue.infinityfreeapp.com/admin/index.php?page=login)
-  - **Username:** `admin123`
-  - **Password:** `admin123`
-
----
-
-## 📖 Fitur Utama
-
-- Sistem autentikasi admin (Login, Register, Logout)
-- CRUD (Create, Read, Update, Delete) untuk:
-  - Kategori produk
-  - Subkategori produk
-  - Occasion (acara seperti promo, event khusus)
-  - Produk (dengan upload gambar)
-- Struktur folder rapi dan mudah dikembangkan
-- Layout frontend dan backend terpisah
-- Pagination sederhana untuk navigasi produk
-- Modularisasi file `config`, `models`, `views`, dan `controllers`
+- Membantu keluarga (sepupu) yang belum memiliki sistem penjualan digital
+- Belajar membangun sistem web dari nol menggunakan PHP procedural tanpa framework
+- Melatih pemahaman terhadap pengolahan data MySQL, sistem login, dan struktur web modular
+- Menggunakan bantuan AI sebagai pendamping belajar, namun tetap menulis dan memahami logika sendiri
 
 ---
 
-## 🚀 Cara Install
+## 🔧 Fitur Website
 
-### 1. Clone Project
+- Autentikasi Admin (Login & Logout)
+- **CRUD Produk Buket** (gambar, nama, harga, kategori, subkategori, dan occasion)
+- Manajemen Data Kategori, Subkategori, dan Occasion
+- Upload & Tampilan Gambar Produk
+- Tampilan Katalog Produk untuk Pengunjung
+- Panel Admin Sederhana dan mudah dikembangkan
+
+---
+
+## 🚀 Live Demo
+
+### 🧪 Versi Awal — Eksperimen Awal
+
+- 🔗 **Katalog Produk (v1):** [Lihat Katalog (v1)](http://katalogbuketnue.infinityfreeapp.com)
+
+- 🔐 **Login Admin (v1):** [Login Admin (v1)](http://katalogbuketnue.infinityfreeapp.com/admin/index.php?page=login)
+  - Username: `admin1234`
+  - Password: `admin1234`
+
+### ⚙️ Versi Pengembangan — Telah Dikembangkan
+
+- 🔗 **Katalog Produk (v2):** [Lihat Katalog (v2)](http://katalogbuketnue.infinityfreeapp.com)
+
+> 🔒 _Akses admin tidak dibuka untuk publik pada versi ini._
+
+### 👥 Login Demo Publik
+
+- 🔓 **Login Demo User:** [Demo User](http://katalogbuketnue.infinityfreeapp.com)
+- 🔐 **Login Admin (v2):** [Demo Admin](http://katalogbuketnue.infinityfreeapp.com/admin/index.php?page=login)
+  - Username: `admin1234`
+  - Password: `admin1234`
+
+> _💡 Silakan gunakan akun demo jika hanya ingin mencoba fitur dasar. Data dapat direset sewaktu-waktu._
+
+---
+
+## 📂 Struktur Folder
 
 ```bash
-git clone https://github.com/username/nama-repo.git
+Fee-Rainbow/
+├── admin/              # Panel admin (controllers, models, views)
+├── app/                # Tampilan frontend & controller untuk pengguna
+├── config/             # File konfigurasi database
+├── assets/             # Aset seperti CSS, JS, dan ikon
+├── uploads/            # penyimpanan gambar produk otomatis
+└── index.php           # Entry point homepage
 ```
 
-### 2. Pindahkan ke Web Server Directory (contoh XAMPP)
+## 📦 Cara Menjalankan Proyek
 
-```bash
-C:/xampp/htdocs/katalog-toko
-```
+1. Clone repo ini:
+   ```bash
+   git clone https://github.com/siegrin/Fee-Rainbow.git
+   ```
+2. Jalankan web server lokal (XAMPP)
 
-### 3. Buat Database
+3. Import file database .sql ke phpMyAdmin
 
-- Masuk ke `phpMyAdmin`
-- Buat database bernama: `katalog_toko`
-- Import file `katalog_toko.sql` jika tersedia
+4. Konfigurasi config/database.php sesuai pengaturan lokal
 
-### 4. Konfigurasi Database
+5. Akses melalui browser: http://localhost/Fee-Rainbow
 
-Edit file `config/database.php`
+## 📷 Preview Antarmuka
 
-```php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db   = 'katalog_toko';
-```
+Berikut tampilan antarmuka dari website **Fee Rainbow**:
 
----
+<p align="center">
+  <img src="preview/dashboard.jpg" alt="Tampilan Halaman User" width="800">
+</p>
 
-## 📅 Workflow Penggunaan
-
-### ✅ 1. Login ke Admin
-
-Masuk ke halaman:
-
-```
-/admin/index.php?page=login
-```
-
-Login dengan akun admin, atau daftar terlebih dahulu jika fitur register aktif.
-
-### ✔️ 2. Tambahkan Kategori
-
-- Masuk ke menu **Kategori**
-- Klik tombol **Tambah**
-- Masukkan nama kategori
-
-### ✔️ 3. Tambahkan Subkategori
-
-- Menu **Subkategori** hanya akan muncul jika sudah ada kategori
-- Pilih kategori induk
-- Masukkan nama subkategori
-
-### ✔️ 4. Tambahkan Occasion
-
-- Digunakan untuk menandai produk dengan event tertentu
-  (misalnya: "Promo Akhir Tahun", "Hari Valentine")
-
-### ✔️ 5. Tambahkan Produk
-
-- Masuk ke menu **Produk**
-- Klik tambah dan isi seluruh data produk:
-  - Nama, deskripsi, harga, gambar
-  - Pilih kategori, subkategori, dan occasion terkait
-
-Produk akan muncul di halaman utama katalog setelah disimpan.
+<p align="center">
+  <img src="preview/admin-dashboard.png" alt="Tampilan Dashboard Admin" width="800">
+</p>
 
 ---
 
-## 🔄 Modul CRUD
+## 📥 Kontak & Update
 
-| Modul       | Fungsi                          |
-| ----------- | ------------------------------- |
-| Kategori    | Tambah, ubah, hapus kategori    |
-| Subkategori | Tambah, ubah, hapus subkategori |
-| Occasion    | Tambah, ubah, hapus occasion    |
-| Produk      | Tambah, ubah, hapus produk      |
+Jika Anda tertarik dengan proyek ini atau ingin melihat update terbarunya:
+
+- Hubungi saya melalui GitHub: [@siegrin](https://github.com/siegrin)
+- Versi terbaru akan diumumkan secara berkala di halaman repo ini
 
 ---
 
-## 🌐 Struktur URL Penting
+## 🤝 Kontribusi
 
-| Halaman         | URL Akses                                             |
-| --------------- | ----------------------------------------------------- |
-| Katalog Produk  | `/index.php`                                          |
-| Login Admin     | `/admin/index.php?page=login`                         |
-| Register Admin  | `/admin/index.php?page=register`                      |
-| Dashboard Admin | `/admin/app/views/dashboard/index.php`                |
-| Kategori        | `/admin/app/views/categories/index.php`               |
-| Subkategori     | `/admin/app/views/categories/subcategories/index.php` |
-| Occasion        | `/admin/app/views/occasions/index.php`                |
-| Produk          | `/admin/app/views/products/index.php`                 |
+Kontribusi, kritik, atau masukan sangat diterima!  
+Silakan ajukan [Issue](https://github.com/siegrin/Fee-Rainbow/issues) atau kirim [Pull Request](https://github.com/siegrin/Fee-Rainbow/pulls).
+
 
 ---
 
-## 📁 Struktur Folder (Ringkasan)
+## 📖 Catatan Pribadi
 
-```
-root/
-├── admin/
-│   ├── app/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   └── views/
-│   │       ├── auth/
-│   │       ├── categories/
-│   │       ├── products/
-│   │       └── dashboard/
-├── config/
-├── public/
-│   ├── assets/
-│   │   ├── css/
-│   │   └── js/
-├── uploads/          # Folder gambar produk
-├── routes/
-└── index.php         # Entry point utama
-```
+Website ini adalah hasil kerja keras mandiri yang saya bangun sambil belajar, bereksperimen, dan memahami setiap baris kode yang ditulis. Teknologi AI digunakan sebagai alat bantu eksplorasi dan pendamping belajar — bukan sebagai pengganti logika atau pemahaman.  
+Saya berharap proyek ini dapat terus berkembang dan menjadi inspirasi bagi pembuat website pemula lainnya.
 
 ---
 
-## 💡 Saran Pengembangan Selanjutnya
+## 🪪 Lisensi
 
-- Tambah fitur pencarian produk
-- Filter berdasarkan kategori atau occasion
-- Export data ke PDF / Excel
-- Upload multiple image per produk
-- Tambah status produk (aktif/tidak aktif)
+Proyek ini bersifat pribadi namun terbuka untuk digunakan kembali dalam konteks:
 
----
+- 📚 Pembelajaran mandiri atau kelas
+- 🎓 Tugas akhir, laporan PKL, atau skripsi
+- 🛒 Prototipe usaha kecil seperti toko buket, florist, dll
 
-## 🙏 Kontribusi
-
-Silakan fork repository ini dan buat pull request jika ingin menyumbangkan fitur atau perbaikan bug.
+Silakan fork dan modifikasi sesuai kebutuhan Anda.
 
 ---
 
-## 🌟 Credit
+## 📈 Statistik GitHub
 
-Dibuat oleh randaman dengan semangat belajar PHP procedural dan membangun sistem backend sederhana yang bisa dipakai untuk toko online kecil hingga menengah.
-
----
-
-## 📆 Lisensi
-
-Proyek ini dilisensikan dengan bebas untuk digunakan dan dimodifikasi.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=siegrin&show_icons=true&theme=tokyonight" width="450">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siegrin&layout=compact&theme=tokyonight" width="350">
+</p>
 
 ---
 
-> Jika kamu suka proyek ini, kasih bintang ya di repo GitHub ini!
+## ⭐ Dukung Proyek Ini
+
+Jika kamu merasa terbantu, terinspirasi, atau sekadar ingin mendukung:
+
+**→ Beri bintang ⭐ di repository ini!**
+
+Itu sangat berarti dan menjadi motivasi besar untuk terus belajar dan berbagi.  
+Terima kasih atas kunjungannya, semoga bermanfaat! 🌸
+
+---
