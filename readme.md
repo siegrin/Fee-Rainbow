@@ -67,14 +67,14 @@
 
 ### ⚙️ Versi Pengembangan — Telah Dikembangkan
 
-- 🔗 **Katalog Produk (v2):** [Lihat Katalog (v2)](http://katalogbuketnue.infinityfreeapp.com)
+- 🔗 **Katalog Produk (v2):** [Lihat Katalog (v2)](https://fee-rainbow.42web.io/)
 
 > 🔒 _Akses admin tidak dibuka untuk publik pada versi ini._
 
 ### 👥 Login Demo Publik
 
-- 🔓 **Login Demo User:** [Demo User](http://katalogbuketnue.infinityfreeapp.com)
-- 🔐 **Login Admin (v2):** [Demo Admin](http://katalogbuketnue.infinityfreeapp.com/admin/index.php?page=login)
+- 🔓 **Login Demo User:** [Demo User](https://onlinestoreeverthingur.infinityfreeapp.com/)
+- 🔐 **Login Admin (v2):** [Demo Admin](https://onlinestoreeverthingur.infinityfreeapp.com/login)
   - Username: `admin1234`
   - Password: `admin1234`
 
